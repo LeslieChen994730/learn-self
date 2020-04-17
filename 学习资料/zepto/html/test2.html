@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test4-10</title>
+    <style>
+      .red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button>添加</button>
+    <ul>
+      <li>111</li>
+      <li>222</li>
+      <li>333</li>
+      <li>444</li>
+    </ul>
+
+    <script src="../常用js/zepto.min.js"></script>
+    <script>
+      $(function() {
+        $('button').on('click', function() {
+          var num = (++$('li').length).toString();
+          $('ul').append('<li>' + (num + num + num) + '</li>');
+        });
+
+        $('ul')
+          .on('mouseenter', 'li', function() {
+            $(this).addClass('red');
+          })
+          .on('mouseleave', 'li', function() {
+            $(this).removeClass('red');
+          });
+      });
+    </script>
+  </body>
+</html>

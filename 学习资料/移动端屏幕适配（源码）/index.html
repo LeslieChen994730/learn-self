@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- <style type="text/css">
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+		.header-container{height: 2.5rem;background-color: rgba(222,24,27,0.9);}
+		.main-container{padding: 2.5rem 0;background-color: #eee;}
+		.slider-container{height:9.15rem;background-color: green;}
+		.nav-container{height: 8.475rem;background-color: blue;}
+		.recommend-container{height: 50.0rem;background-color: pink;}
+		.tabbar-container{height: 2.5rem;background-color: #fff;}
+		.header-container,.tabbar-container{position: fixed;left: 0;z-index: 1000;width: 100%;}
+		.tabbar-container{bottom: 0;}
+	</style> -->
+	<!-- <script type="text/javascript">
+		//1rem=viewWidth/18.75
+		//获取视口宽度
+		// var ratio=18.75;
+		// var viewWith=document.documentElement.getBoundingClientRect().width||window.innerWidth;
+		// //设置元素的font-size/1rem的基准单位
+		// document.documentElement.style.fontSize=viewWith/ratio+'px';
+		// setRemUnit();
+		// window.addEventListener('resize',setRemUnit);
+		// //封装函数
+		// // function setRemUnit(){
+		// // 	var docEl=document.documentElement;
+		// // 	var ratio=18.75;
+		// // 	var viewWith=docEl.getBoundingClientRect().width||window.innerWidth;
+		// // 	//设置元素的font-size/1rem的基准单位
+		// //     docEl.style.fontSize=viewWith/ratio+'px';
+		// // }
+	</script> -->
+	<script type="text/javascript" src="js/flexible.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<header class="header-container">
+		<div class="navbar">
+	        <!--左边  -->
+			<div class="navbar-left">
+				<i class="iconfont icon-scan"></i>
+			</div>
+			<!-- 中间 -->
+			<div class="navbar-center">
+				<div class="searchBox">
+					<div class="searchBox-prepend">
+						<i class="iconfont icon-search"></i>
+					</div>
+					<input type="text" class="searchBox-input" placeholder="开学有礼,好货5折起"></input>
+					<div class="searchBox-append">
+						<i class="iconfont icon-close"></i>
+					</div>
+				</div>		
+			</div>
+			<!-- 右边 -->
+			<div class="navbar-right">
+				<i class="iconfont icon-msg"></i>
+			</div>
+		</div>
+	</header>
+	<!-- 幻灯片 -->
+	<div class="main-container">
+		<div class="slider-container">
+			<img src="img/slider/1.jpg" alt="slider">
+		</div>
+	</div>
+	<!-- 导航 -->
+	<nav class="nav-container">
+		<ul class="nav">
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+			<li class="nav-item">
+				<a href="###" class="nav-link">
+					<img src="img/nav/1.png" alt="nav" class="nav-img">
+					<span class="nav-text">团购</span>
+				</a> 
+			</li>
+		</ul>
+	</nav>
+	<!-- 商品页面区 -->
+	<div class="recommend-container">
+		<ul class="recommend">
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/1.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">欧派整体橱柜定制简约现代</p>
+                        <p class="recommend-origPrice">
+                            <del>¥2000.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">1000</strong></span>
+                            <span class="recommend-count">985件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/2.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">创维55吋4K超高清HDR</p>
+                        <p class="recommend-origPrice">
+                            <del>¥2999.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">2299</strong></span>
+                            <span class="recommend-count">63件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/3.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">【到手259元】苏泊尔 5L电压力锅</p>
+                        <p class="recommend-origPrice">
+                            <del>¥799.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">299</strong></span>
+                            <span class="recommend-count">1908件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/4.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">三只松鼠坚果礼包</p>
+                        <p class="recommend-origPrice">
+                            <del>¥125.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">108</strong></span>
+                            <span class="recommend-count">9532件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/5.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">蓝月亮洗衣液12斤</p>
+                        <p class="recommend-origPrice">
+                            <del>¥133.40</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">89.9</strong></span>
+                            <span class="recommend-count">5399件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/6.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">福临门葵花玉米油</p>
+                        <p class="recommend-origPrice">
+                            <del>¥109.90</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">89.9</strong></span>
+                            <span class="recommend-count">6294件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/7.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">TP-LINK 全千兆端口双频无线路由器</p>
+                        <p class="recommend-origPrice">
+                            <del>¥179.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">169</strong></span>
+                            <span class="recommend-count">4255件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/8.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">【前1800名再减50】家用高压洗车机</p>
+                        <p class="recommend-origPrice">
+                            <del>¥790.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">268</strong></span>
+                            <span class="recommend-count">1599件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/9.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">德国鲁茜rusch迷你婴儿辅食机 宝宝</p>
+                        <p class="recommend-origPrice">
+                            <del>¥898.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">159</strong></span>
+                            <span class="recommend-count">881件已售</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="recommend-item">
+                    <a href="###" class="recommend-link">
+                        <p class="recommend-pic">
+                            <img src="img/recommend/10.jpg" alt="recommend" class="recommend-img">
+                        </p>
+                        <p class="recommend-name">西域之尚红枣500g*5袋</p>
+                        <p class="recommend-origPrice">
+                            <del>¥89.00</del>
+                        </p>
+                        <p class="recommend-info">
+                            <span class="recommend-price">¥<strong class="recommend-price-num">29.9</strong></span>
+                            <span class="recommend-count">15049件已售</span>
+                        </p>
+                    </a>
+                </li>
+        </ul>
+	</div>
+
+	<!-- 脚 -->
+	<div class="tabbar-container">
+		<ul class="tabbar">
+            <li class="tabbar-item tabbar-item-active">
+                <a href="###" class="tabbar-link">
+                    <i class="iconfont icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="tabbar-item">
+                <a href="###" class="tabbar-link">
+                    <i class="iconfont icon-category"></i>
+                    <span>分类页</span>
+                </a>
+            </li>
+            <li class="tabbar-item">
+                <a href="###" class="tabbar-link">
+                    <i class="iconfont icon-cart"></i>
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li class="tabbar-item">
+                <a href="###" class="tabbar-link">
+                    <i class="iconfont icon-personal"></i>
+                    <span>个人中心</span>
+                </a>
+            </li>
+        </ul>
+	</div>
+</body>
+</html>

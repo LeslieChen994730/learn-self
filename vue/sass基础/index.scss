@@ -1,0 +1,54 @@
+// @import 'base.css';
+// @import '_index1';
+// $color1:#b4b5bb;
+// $color2:#040fff;
+// $color3:#a69e61;
+
+// .div{
+//     border: 1px;
+//     background-color: red;
+// }
+
+/* list */
+$list: 1,
+2,
+3,
+4,
+5;
+
+.div {
+    zoom: length($list);
+    zoom: nth($list, 2);
+
+    @debug set-nth($list, 1, x);
+    @debug join($list, (6, 7, 8));
+    @debug append($list, 999);
+}
+
+/* string */
+$string:'Hello';
+$stringNo:hello;
+
+.div {
+    background-image: quote($stringNo);
+    background-image: str-length($string);
+    background-image: str-insert($string, 'p', 4);
+    background-image: str-slice($string, 1, 1);
+}
+
+/* map */
+$map:(top:1px, bottom:2px, left:3px, right:4px);
+
+.div3 {
+    width: map-get($map, a);
+}
+
+/* 自定义函数 */
+@function px2rem($args) {
+    $rem: 37.5;
+    @return $args/$rem+rem;
+}
+
+div {
+    width: px2rem(100);
+}

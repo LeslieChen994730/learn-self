@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<style type="text/css">
+	.box{width: 150px;height: 150px;background-color: red;margin: 20px auto;}
+	.clientX,.clientY{text-align: center;width: 100%;}
+</style>
+</head>
+<body>
+	<div id="box" class="box"></div>
+	<div id="clientX" class="clientX"></div>
+	<div id="clientY" class="clientY"></div>
+	<div></div>
+
+
+	<script>
+		var boxEl=document.getElementById('box');
+		var clientX=document.getElementById('clientX');
+		var clientY=document.getElementById('clientY');
+
+		// box.ontouchstart=handleStart;
+		// box.ontouchmove=handleMove;
+		// box.ontouchend=handleEnd;
+		// box.ontouchcancel=handleCancel;
+
+		boxEl.addEventListener('touchstart',handleStart,false);
+		boxEl.addEventListener('touchmove',handleMove,false);
+		boxEl.addEventListener('touchend',handleEnd,false);
+
+		function handleStart(e){
+			boxEl.style.backgroundColor='green';
+			clientX.innerHTML='touch开始的位置:'+e.changedTouches[0].pageX+'';
+			clientY.innerHTML='touch开始的位置:'+e.changedTouches[0].pageY+'';
+
+		}
+
+		function handleMove(e){
+			boxEl.style.backgroundColor='blue';
+		}
+
+		function handleEnd(e){
+			boxEl.style.backgroundColor='pink';
+		}
+
+		// function handleCancel(){
+			
+		// }
+	</script>
+</body>
+</html>

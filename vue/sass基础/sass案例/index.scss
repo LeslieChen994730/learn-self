@@ -1,0 +1,161 @@
+@import '_reset.scss';
+$baseFontSize: 17px;
+$redColor: #d43d3d;
+$blueColor:#2a90d7;
+$assetsDir: 'assets';
+
+@mixin sectionStyle {
+    margin: auto 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+}
+
+@mixin hotLabel($color) {
+    font-size: 14px;
+    color: $color;
+    border: 1px solid $color;
+}
+
+@mixin lin2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+@mixin clearFix {
+    &::after {
+        content: '';
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+}
+
+@mixin commonImg {
+    border: none;
+    width: 100%;
+    display: block;
+}
+
+.header {
+    height: 45px;
+    background-color: $redColor;
+    $assetsDir: 'assets';
+
+    .title_logo {
+        width: 100px;
+        height: 100%;
+        margin: 0 auto;
+
+        background: {
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+            image: url('../#{$assetsDir}/wap_logo@3x_581de69e.png');
+        }
+    }
+}
+
+.top_bar {
+    background-color: #f4f5f6;
+    height: 34px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    //去掉滚动样式
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .top_menu_list {
+        white-space: nowrap;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+
+        .btn {
+            display: inline-block;
+            padding: 8px;
+            font-size: $baseFontSize;
+
+            &.cur {
+                color: $redColor;
+            }
+        }
+    }
+}
+
+.content_list {
+    .section_item {
+        @include sectionStyle;
+
+        .title {
+            font-size: 20px;
+        }
+
+        .item_info_base {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .item_info {
+            margin-top: 11px;
+            @extend .item_info_base;
+        }
+
+        .label {
+            @include hotLabel($redColor);
+        }
+
+        .src {
+            @extend .item_info_base;
+        }
+    }
+
+    .images-item {
+        @extend .section_item;
+
+        .item_detail {
+            .title {
+                @include lin2;
+            }
+
+            .list_image {
+                margin-top: 10px;
+
+                ul {
+                    @include clearFix;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .list_img_holder {
+                        width: 30%;
+                        img {
+                            @include commonImg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .image-item {
+        @extend .section_item;
+
+        .one_image {
+            height: 195px;
+            margin-top: 10px;
+
+            img {
+                @include commonImg;
+            }
+        }
+
+        .gg.label {
+            @include hotLabel($blueColor);
+        }
+    }
+}

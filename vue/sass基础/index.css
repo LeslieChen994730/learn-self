@@ -1,0 +1,19 @@
+/* list */
+.div {
+  zoom: 5;
+  zoom: 2;
+}
+
+/* string */
+.div {
+  background-image: "hello";
+  background-image: 5;
+  background-image: "Helplo";
+  background-image: "H";
+}
+
+/* map */
+.div3 {
+  width: 1px, 2px, 3px, 4px;
+}
+/*# sourceMappingURL=index.css.map */

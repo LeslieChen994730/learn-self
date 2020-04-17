@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 12px;
+	color: #5d655b;
+}
+
+a{
+	text-decoration: none;
+	color: #686868;
+	/*font-size: 12px;*/
+	-webkit-tap-highlight-color: transparent;
+}
+
+input{
+	font-size: inherit;
+	border: none;
+	background-color: none;
+	outline: none;
+}
+
+[data-dpr='2'] body{
+	font-size: 24px;
+}
+
+[data-dpr='3'] body{
+	font-size: 36px;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	vertical-align: top;
+	border: none;
+	width: 100%;
+}
+
+.recommend-price{
+	color: #e61414;
+}
+
+.recommend-price-num{
+	font-size: 20px;
+}
+
+[data-dpr='2'].recommend-price-num{
+	font-size: 40px;
+}
+[data-dpr='3'].recommend-price-num{
+	font-size: 60px;
+}
+
+.recommend-count{
+	color: #999;
+}
