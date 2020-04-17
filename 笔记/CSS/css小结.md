@@ -41,7 +41,7 @@
 
 3. **属性选择器**([])
 
-![](C:\Users\chenz\Desktop\笔记\CSS\图片\属性选择器.png)
+![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\属性选择器.png)
 
 
 
@@ -185,7 +185,7 @@
 
 #### 权值
 
-![](C:\Users\chenz\Desktop\笔记\CSS\图片\权值.png)
+![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\权值.png)
 
 ==内联样式为直接写在元素上的style。权值最高==
 
@@ -304,7 +304,7 @@
     box-shadow: h-shadow v-shadow blur spread color inset;
     ```
 
-    ![](C:\Users\chenz\Desktop\笔记\CSS\图片\盒阴影.png)
+    ![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\盒阴影.png)
 
 #### 背景与渐变
 
@@ -320,7 +320,7 @@
 
 2. **渐变**
 
-    <img src="C:\Users\chenz\Desktop\笔记\CSS\图片\css渐变.jpg" style="zoom:200%;" />
+    <img src="C:\Users\chenz\Desktop\git\笔记\CSS\图片\css渐变.jpg" style="zoom:200%;" />
 
 
 
@@ -387,7 +387,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', end
 
 #### 动画(animation)
 
-![](C:\Users\chenz\Desktop\笔记\CSS\图片\css3动画.png)
+![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\css3动画.png)
 
 **步骤**
 
@@ -442,13 +442,11 @@ to {left:200px;background:green;height:10px;width:10px}
 
 #### 转换(transform)
 
-<img src="C:\Users\chenz\Desktop\笔记\CSS\图片\transform.jpg" style="zoom: 200%;" />
-
-
+<img src="C:\Users\chenz\Desktop\git\笔记\CSS\图片\transform.jpg" style="zoom:200%;" />
 
 #### 矩阵(matrix)
 
-![](C:\Users\chenz\Desktop\笔记\CSS\图片\css3矩阵.png)
+![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\css3矩阵.png)
 
 **常见几种变换矩阵**
 

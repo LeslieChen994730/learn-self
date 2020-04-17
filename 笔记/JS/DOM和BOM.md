@@ -8,7 +8,7 @@
 
 
 
-<img src="C:\Users\chenz\Desktop\笔记\JS\图片\BOM.jpg" style="zoom:200%;" />
+<img src="C:\Users\chenz\Desktop\git\笔记\JS\图片\BOM.jpg" style="zoom:200%;" />
 
 
 
@@ -167,7 +167,7 @@ el.removeAttribute('属性名');
 
 ### DOM事件
 
-![](C:\Users\chenz\Desktop\笔记\JS\图片\jsDOM事件.png)
+![](C:\Users\chenz\Desktop\git\笔记\JS\图片\jsDOM事件.png)
 
 
 
@@ -253,7 +253,7 @@ el.removeAttribute('属性名');
 
     ### DOM节点关系树
 
-    ![](C:\Users\chenz\Desktop\笔记\JS\图片\原生DOM节点关系图.png)
+    ![](C:\Users\chenz\Desktop\git\笔记\JS\图片\原生DOM节点关系图.png)
 
 1.  **frist/lastChild=>fristElementChild**
 2.  **childNodes[n]/childNodes.item(n)=>children[n]**

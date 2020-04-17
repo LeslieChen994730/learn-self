@@ -124,11 +124,6 @@ var fn=new Function('num1','num2','return num1+num2');
     console.log(Object.prototype.toString.call({}))              // [object Object]
     ```
 
-    
-
-    
-
-
 
 
 

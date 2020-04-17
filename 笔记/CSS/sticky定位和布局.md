@@ -109,7 +109,7 @@
 
 #### flexbox布局
 
-![](C:\Users\chenz\Desktop\笔记\CSS\图片\flex.jpg)
+![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\flex.jpg)
 
 
 
@@ -156,7 +156,7 @@
 
     2.  **思维导图**
 
-        <img src="C:\Users\chenz\Desktop\笔记\CSS\图片\栅格系统.jpg" style="zoom:200%;" />
+        ![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\栅格系统.jpg)
 
     3.  **实例**
 
