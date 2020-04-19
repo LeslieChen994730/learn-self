@@ -123,7 +123,7 @@ git push -u origin master
 2.  创建分支：git branch 分支名
 3.  切换分支：git checkout 分支名
 4.  合并到master分支：git merge 分支名  //首先切换到主分支（master）
-5.  删除分支：git branch -d 分支名
+5.  删除分支：git branch -d 分支名11111111
 
 
 
