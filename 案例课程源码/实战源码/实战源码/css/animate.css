@@ -135,6 +135,8 @@
 	transition: all 1s;
 }
 
+
+/* gfgfd */
 .screen-4__heading_animate_init {
 	opacity: 0;
 	transform: translate(0, -100%);
