@@ -185,7 +185,7 @@
 	transition: all 1s;
 }
 
-.screen-5__bg{
+.screen-5__bg {
 	transition: all 1s .5s;
 	-webkit-transition: all 1s .5s;
 	-moz-transition: all 1s .5s;
@@ -287,3 +287,5 @@
 .outline__item {
 	transition: all 1s;
 }
+
+/* fffffffffffffffffffff */
