@@ -81,7 +81,7 @@ git checkout -- test.txt：把工作区中修改的文件变干净，变成未�
 
 注意：如果需要重新关联一个origin需要执行命令：
 
-git remote rm orgin
+git remote rm origin
 
 git remote add origin xxxxx
 

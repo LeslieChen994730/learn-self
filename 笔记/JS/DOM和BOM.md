@@ -61,7 +61,39 @@ el.setAttribute('属性名','属性值');
 el.removeAttribute('属性名');
 ```
 
+### DOM节点
+
+1.  元素节点
+
+    元素标签，比如<body><table><div>等等。
+
+2.  文本节点
+
+    任意的文字、空格、换行、空白行都算是文本节点。
+
+3.  属性节点
+
+    属性节点，故名思议就是其他节点的属性。例如所有的元素都有title属性，在title='title1'就是一个属性节点。
+
+4.  注释节点
+
+
+
+**childNodes和children**
+
+childNodes：返回父元素所有的直系子节点的集合，注意，与children不同的是，childNodes会返回HTML元素节点，属性节点，文本节点。
+
+
+
+**nodeType属性值**
+
+<img src="图片/nodeTye属性值.png" style="zoom:200%;" />
+
+
+
 ### DOM元素属性
+
+
 
 1.  **setAttribute** 
 
@@ -229,7 +261,7 @@ el.removeAttribute('属性名');
 
         *   `'afterbegin'`：就在`element`第一个孩子之前。
 
-        *   `'beforeend'`：在的`element`最后一个子之后的内。
+        *   `'beforeend'`：在的`element`最后一个子之后的内。（appendChild）
 
         *   `'afterend'`：`element`本身之后。
 

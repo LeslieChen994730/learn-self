@@ -85,6 +85,10 @@
     | **offsetX/Y**           | 鼠标相对于操作元素(鼠标点击元素)到盒子边缘(左上)的位置 |
     | **screenX/Y**           | 鼠标相对于显示屏的位置                                 |
 
+    ==return false等于同时调用了event.stopPropagation()和event.preventDefault()==
+
+    
+
 4.  **事件委托**
 
     利用事件冒泡，绑定事件到父元素及以上。
