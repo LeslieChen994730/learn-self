@@ -3,12 +3,12 @@
     <div>条件渲染</div>
     <div>---------------------------------</div>
 
-    <div v-if="type">A</div>
+    <div v-if="type==='a'">A</div>
     <div v-else-if="type==='b'">B</div>
     <div v-else-if="type==='c'">C</div>
     <div v-else>false</div>
 
-    <div v-show="'false'">aaaaaaaaaaaa</div>
+    <div v-show="true">aaaaaaaaaaaa</div>
   </div>
 </template>
 
@@ -16,7 +16,8 @@
 export default {
   data() {
     return {
-      type: null
+      type: 'a',
+      flag:false
     };
   }
 };

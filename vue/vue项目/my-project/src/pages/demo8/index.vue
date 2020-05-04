@@ -7,7 +7,7 @@
       <p>这个按钮被点击了{{num}}次</p>
       <div>------------------------------------</div>
       <div @click="dothis2">
-        <button @click.prevent="dothis1">点击我</button>
+        <button @click.stop.once="dothis1">点击我</button>
       </div>
     </div>
   </div>

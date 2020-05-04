@@ -3,7 +3,7 @@
     <div>列表渲染</div>
     <div>------------------------------------</div>
     <ul id="example-1">
-      <li v-for="(item,index) of items" :key="index">{{item.message}}</li>
+      <li v-for="(item,index) in items" :key="index">{{index}}:{{item}}</li>
     </ul>
   </div>
 </template>
@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      items: [{ message: "son" }, { message: "son2" }]
+      items: [1,2,3,4,5,6,7,8,9,10]
     };
   }
 };

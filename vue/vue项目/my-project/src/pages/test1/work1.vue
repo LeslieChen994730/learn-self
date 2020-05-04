@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-html="Btn" :class="btn" @click="Alert"></div>
+    <div v-html="Btn" :class="className" @click="Alert"></div>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       Btn: `<button>我是按钮</button>`,
-      btn: 'btn'
+      className:{'btn':true,'new':true}
     };
   },
   methods: {

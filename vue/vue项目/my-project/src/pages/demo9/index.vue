@@ -2,7 +2,7 @@
   <div>
     <div>表单控件</div>
     <div>-------------------------------</div>
-    <input value="我是文本框到默认值" v-model="Message" placeholder="edit me" />
+    <input value="我是文本框到默认值" v-model.lazy="Message" placeholder="edit me" />
     <p>Message is:{{Message}}</p>
     <div>-------------------------------</div>
     <!-- 多选框 -->
@@ -15,9 +15,9 @@
     <span>Checked Names:{{checkedName}}</span>
     <div>----------------------------------</div>
     <!-- 单选框 -->
-    <input type="radio"  id="" value="men" v-model="radioChecked">
-    <input type="radio"  id="" value="women" v-model="radioChecked">
-    <br>
+    <input type="radio" id value="men" v-model="radioChecked" />
+    <input type="radio" id value="women" v-model="radioChecked" />
+    <br />
     <span>radioChecked values:{{radioChecked}}</span>
 
     <div>--------------------------------</div>
@@ -41,12 +41,12 @@ export default {
     return {
       Message: "",
       checkedName: [],
-      selected:'',
-      radioChecked:''
+      selected: "no selected",
+      radioChecked: ""
     };
   },
 
-  mounted(){
+  mounted() {
     console.log(this.$route.params);
   }
 };

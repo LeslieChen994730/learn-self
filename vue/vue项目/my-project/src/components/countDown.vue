@@ -20,11 +20,9 @@ export default {
     }, 1000);
   },
 
-  props: ['col','bgColor','fsize']
-
+  props: ["col", "bgColor", "fsize"]
 };
 </script>
 
-<style>
-
+<style lang="scss" scoped>
 </style>

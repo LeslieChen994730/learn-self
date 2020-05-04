@@ -19,7 +19,7 @@ export default {
       msg: "hello,world!",
       rawHtml: "<span>123</span>",
       red: "red",
-      message:'message'
+      message: "message"
     };
   },
 
@@ -28,10 +28,10 @@ export default {
       this.red = "blue";
     }
   },
-  filters:{
-      a(){
-          return '123';
-      }
+  filters: {
+    a() {
+      return "123";
+    }
   }
 };
 </script>
