@@ -5,11 +5,9 @@
       <home-header></home-header>
     </header>
     <!-- 幻灯片slider -->
-    <scroll 
-    :data="recommends"
-    pullDown
-    @pull-down='pullToRefresh'
-    >
+    <scroll :data="recommends"
+            pullDown
+            @pull-down='pullToRefresh'>
       <home-slider />
       <home-nav />
       <home-recommend @loaded="getRecommends" />
@@ -20,14 +18,14 @@
 </template>
 
 <script>
-import HomeHeader from "./header";
-import HomeSlider from "./slider";
-import scroll from "base/scroll";
-import HomeNav from "./nav";
-import HomeRecommend from "./recommend";
+import HomeHeader from './header'
+import HomeSlider from './slider'
+import scroll from 'base/scroll'
+import HomeNav from './nav'
+import HomeRecommend from './recommend'
 
 export default {
-  name: "Home",
+  name: 'Home',
 
   components: {
     HomeHeader,
@@ -37,27 +35,27 @@ export default {
     HomeRecommend
   },
 
-  data() {
+  data () {
     return {
       recommends: []
-    };
+    }
   },
 
   methods: {
-    updateScroll() {},
+    updateScroll () { },
 
-    getRecommends(recommends) {
-      this.recommends = recommends;
+    getRecommends (recommends) {
+      this.recommends = recommends
     },
 
-    pullToRefresh(end){
-      setTimeout(()=>{
-        console.log('下拉刷新');
-        end();
-      },1000);
+    pullToRefresh (end) {
+      setTimeout(() => {
+        console.log('下拉刷新')
+        end()
+      }, 1000)
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
