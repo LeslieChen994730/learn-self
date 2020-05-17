@@ -109,7 +109,7 @@
 
 #### flexbox布局
 
-![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\flex.jpg)
+![](.\图片\flex.jpg)
 
 
 
@@ -134,7 +134,7 @@
 
 2.  **媒体查询（@media）**
 
-    ```
+    ```css
     @media screen and (max-width: 980px) {
       #head { … }
       #content { … }
@@ -156,7 +156,7 @@
 
     2.  **思维导图**
 
-        ![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\栅格系统.jpg)
+        ![](图片\栅格系统.jpg)
 
     3.  **实例**
 

@@ -8,7 +8,7 @@
 
 
 
-<img src="C:\Users\chenz\Desktop\git\笔记\JS\图片\BOM.jpg" style="zoom:200%;" />
+<img src="图片\BOM.jpg" style="zoom:200%;" />
 
 
 
@@ -199,7 +199,7 @@ childNodes：返回父元素所有的直系子节点的集合，注意，与chil
 
 ### DOM事件
 
-![](C:\Users\chenz\Desktop\git\笔记\JS\图片\jsDOM事件.png)
+![](图片\jsDOM事件.png)
 
 
 
@@ -285,7 +285,7 @@ childNodes：返回父元素所有的直系子节点的集合，注意，与chil
 
     ### DOM节点关系树
 
-    ![](C:\Users\chenz\Desktop\git\笔记\JS\图片\原生DOM节点关系图.png)
+    ![](图片\原生DOM节点关系图.png)
 
 1.  **frist/lastChild=>fristElementChild**
 2.  **childNodes[n]/childNodes.item(n)=>children[n]**

@@ -320,23 +320,23 @@ sass有两种注释方式，一种是标准的css注释方式/* */，==另一种
 
 ## Math函数
 
-![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\sass中的Math方法.png)
+![](图片\sass中的Math方法.png)
 
 ## 列表函数
 
-![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\sass中的list函数.png)
+![](图片\sass中的list函数.png)
 
 
 
 ## Map函数
 
-![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\sass中的Map函数.png)
+![](图片\sass中的Map函数.png)
 
 
 
 ## RGB函数
 
-![](C:\Users\chenz\Desktop\git\笔记\CSS\图片\sass中的RGB函数.png)
+![](图片\sass中的RGB函数.png)
 
 
 
@@ -385,7 +385,7 @@ sass有两种注释方式，一种是标准的css注释方式/* */，==另一种
 
 ## 思维导图
 
-<img src="C:\Users\chenz\Desktop\git\笔记\CSS\图片\sass.jpg" style="zoom:200%;" />
+<img src="图片\sass.jpg" style="zoom:200%;" />
 
 [TOC]
 

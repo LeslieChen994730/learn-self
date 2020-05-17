@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* list */
 .div {
   zoom: 5;
@@ -13,7 +14,8 @@
 }
 
 /* map */
-.div3 {
-  width: 1px, 2px, 3px, 4px;
+/* 自定义函数 */
+div {
+  width: 2.66667rem;
 }
 /*# sourceMappingURL=index.css.map */

@@ -8,9 +8,9 @@ JSON的英文全称是JavaScript Object Notation，也就是**JS对象标记法*
 
 JSON是一种数据格式，载体是字符串，其实，JSON对象就是JS对象的子集而已。
 
-![](C:\Users\chenz\Desktop\git\笔记\JS\图片\JSON格式要求.png)
+![](图片\JSON格式要求.png)
 
-![](C:\Users\chenz\Desktop\git\笔记\JS\图片\JSON数据类型.png)
+![](图片\JSON数据类型.png)
 
 ### 方法
 
@@ -95,7 +95,7 @@ xmlhttp.send();//GET请求
 
 #### 请求方式
 
-![](C:\Users\chenz\Desktop\git\笔记\JS\图片\jQuery下的Ajax请求方式.png)
+![](图片\jQuery下的Ajax请求方式.png)
 
 
 
@@ -116,7 +116,7 @@ $.get("test.cgi", { name: "John", time: "2pm" },
 
 #### Ajax请求
 
-![](C:\Users\chenz\Desktop\git\笔记\JS\图片\Ajax请求.png)
+![](图片\Ajax请求.png)
 
 ```js
          $.ajax({

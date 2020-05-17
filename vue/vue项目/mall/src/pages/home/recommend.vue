@@ -1,17 +1,20 @@
 <template>
   <div class="recommend">
     <h3 class="recommend-title">热卖推荐</h3>
-    <div class="loading-container" v-if="!recommends.length">
+    <div class="loading-container"
+         v-if="!recommends.length">
       <me-loading inline />
     </div>
-    <ul class="recommend-list" v-else>
-      <li class="recommend-list-item" v-for="(item,index) in recommends" :key="index">
-        <router-link
-          class="recommend-list-item-link"
-          :to="{name:'home-product',params:{id:item.baseinfo.itemId}}"
-        >
+    <ul class="recommend-list"
+        v-else>
+      <li class="recommend-list-item"
+          v-for="(item,index) in recommends"
+          :key="index">
+        <router-link class="recommend-list-item-link"
+                     :to="{name:'home-product',params:{id:item.baseinfo.itemId}}">
           <p class="recommend-pic">
-            <img class="recommend-img" v-lazy="item.baseinfo.picUrlNew" />
+            <img class="recommend-img"
+                 v-lazy="item.baseinfo.picUrlNew" />
           </p>
           <p class="recommend-name">{{item.name.shortName}}</p>
           <p class="recommend-origPrice">
@@ -30,54 +33,54 @@
   </div>
 </template>
 <script>
-import { getHomeRecommend, getHomeSlider } from "api/home";
-import MeLoading from "base/loading";
+import { getHomeRecommend, getHomeSlider } from 'api/home'
+import MeLoading from 'base/loading'
 
 export default {
-  name: "HomeRecommend",
+  name: 'HomeRecommend',
 
-  created() {
-    this.getRecommend();
+  created () {
+    this.getRecommend()
   },
 
-  data() {
+  data () {
     return {
       recommends: [],
       curPage: 1,
       totalPage: 1
-    };
+    }
   },
 
-  //注册组件
+  // 注册组件
   components: {
     MeLoading
   },
 
-  //计算属性
+  // 计算属性
   computed: {},
 
-  //事件函数
+  // 事件函数
   methods: {
-    getRecommend() {
+    getRecommend () {
       if (this.curPage > this.totalPage) {
-        return;
+        return
       }
       getHomeRecommend(this.curPage).then(data => {
         if (data) {
-          console.log(data);
-          this.curPage++;
-          this.totalPage = data.totalPage;
-          this.recommends = this.recommends.concat(data.itemList);
-          this.$emit("loaded", this.recommends);
+          // console.log(data)
+          this.curPage++
+          this.totalPage = data.totalPage
+          this.recommends = this.recommends.concat(data.itemList)
+          this.$emit('loaded', this.recommends)
           // resolve();
         }
-      });
+      })
     }
   },
 
-  //挂载
-  mounted() {}
-};
+  // 挂载
+  mounted () { }
+}
 </script>
 
 <style scoped lang="scss">

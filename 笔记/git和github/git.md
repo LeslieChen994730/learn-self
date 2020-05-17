@@ -46,7 +46,7 @@ git reset HEAD test.txt：把暂存区修改的文件回归到工作区
 
 git checkout -- test.txt：把工作区中修改的文件变干净，变成未修改前
 
-![](C:\Users\chenz\Desktop\git\笔记\git和github\图片\5dccbba500011f7412800720.jpg)
+![](图片\5dccbba500011f7412800720.jpg)
 
 
 

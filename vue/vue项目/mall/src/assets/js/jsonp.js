@@ -1,33 +1,32 @@
-import jsonp from "jsonp";
+import jsonp from 'jsonp'
 
 // {
 //     page:1,
 //     psize:20
 // }
 const parseParam = param => {
-  let params = [];
+  let params = []
 
   for (const key in param) {
-    params.push([key, param[key]]);
+    params.push([key, param[key]])
   }
-  
-  return params.map(value => value.join("=")).join("&");
-    // params=[[page,1],[psize,20]];
-    // params.map=[page=1,psize=20];
-    // params.map.join('&')=[page=1&psize=20];
 
-};
+  return params.map(value => value.join('=')).join('&')
+  // params=[[page,1],[psize,20]];
+  // params.map=[page=1,psize=20];
+  // params.map.join('&')=[page=1&psize=20];
+}
 
 export default (url, data, options) => {
-  url += (url.indexOf("?") < 0 ? "?" : "&") + parseParam(data);
+  url += (url.indexOf('?') < 0 ? '?' : '&') + parseParam(data)
 
   return new Promise((resolve, reject) => {
     jsonp(url, options, (err, data) => {
       if (err) {
-        reject(err);
+        reject(err)
       } else {
-        resolve(data);
+        resolve(data)
       }
-    });
-  });
-};
+    })
+  })
+}

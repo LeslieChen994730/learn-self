@@ -40,7 +40,7 @@
 
 #### 列表
 
-![](C:\Users\chenz\Desktop\git\笔记\HTML\图片\列表.jpg)
+![](图片\列表.jpg)
 
 
 
