@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <script src="../../vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <cp>
+        <button slot="btn">自定义btn</button>
+        <input type="text" value="自定义" slot="inputText" />
+        <a href="#" slot="link">自定义</a>
+      </cp>
+    </div>
+
+    <template id="cpn">
+      <div>
+        <slot name="btn">
+          <button>默认值</button>
+        </slot>
+        <slot name="inputText">
+          <input type="text" name="" id="" value="默认" />
+        </slot>
+        <slot name="link">
+          <a href="#">跳转</a>
+        </slot>
+      </div>
+    </template>
+    <script src="./index.js"></script>
+  </body>
+</html>

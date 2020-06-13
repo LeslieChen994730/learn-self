@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作业1</title>
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="stylesheet" href="../reset.css" />
+    <script src="../vue.js"></script>
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li
+          v-for="(item,index) in movies"
+          @click="click(index)"
+          :class="{red:currentIndex===index}"
+        >
+          {{item}}
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          getClass: {
+            red: false,
+          },
+
+          currentIndex: null,
+          movies: ['海王', '海贼王', '成祖荣'],
+        },
+        methods: {
+          click(index) {
+            this.currentIndex = index
+          },
+        },
+      })
+    </script>
+  </body>
+</html>

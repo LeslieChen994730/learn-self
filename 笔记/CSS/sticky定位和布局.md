@@ -59,7 +59,7 @@
 
 3.  after伪类:
 
-    ```html
+    ```css
     ::after{
     	display:block;
     	content:'';

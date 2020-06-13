@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <script src="../../vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <cp></cp>
+      <cp></cp>
+      <cp ref="aaa"></cp>
+      <cp></cp>
+      <!-- <button @click="btnClick">点击我</button> -->
+    </div>
+
+    <template id="cpn">
+      <div>
+        <p @click="btnClick">我是子组件</p>
+      </div>
+    </template>
+    <script src="./index.js"></script>
+  </body>
+</html>

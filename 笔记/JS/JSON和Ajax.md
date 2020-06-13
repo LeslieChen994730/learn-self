@@ -36,6 +36,8 @@ JSON是一种数据格式，载体是字符串，其实，JSON对象就是JS对�
 2、安全问题 Ajax 暴露了与服务器交互的细节；
 3、对搜索引擎的支持比较弱 ；
 
+
+
 ### 原生JS步骤
 
 #### 创建XMLHttpRequest对象
@@ -61,7 +63,7 @@ function getXHR() {
 #### 注册回调函数
 
 ```js
-hxmlhttp.onreadystatechange = function(){//设置回调函数
+xmlhttp.onreadystatechange = function(){//设置回调函数
 	if(xmlhttp.readyState == 4)//这里的4是请求的状态码，代表请求已经完成
 		if(xmlhttp.status == 200 || xmlhttp.status == 304)//这里是获得响应的状态码，200代表成功，304代表无修改可以直接从缓存中读取
 			var result = xmlhttp.responseText;//这里获取的是响应文本，也可以获得响应xml或JSON
@@ -123,7 +125,7 @@ $.get("test.cgi", { name: "John", time: "2pm" },
                         //type默认为get
                         type:"post",
                         url:"searchServlet",
-                        data:{name:word},
+                        data:{name:"data"},
                         dataType:"json",
                         success:function (result) {
                             //判断数据是否为空,result返回的是一个列表数据，就是js数组

@@ -244,7 +244,7 @@ childNodes：返回父元素所有的直系子节点的集合，注意，与chil
     3.  **insertBefore**
 
         ```js
-        parentNode.insertBefore(newNode, refNode);  
+        parentNode.insertBefore(newNode, oldNode);  
         ```
 
         
